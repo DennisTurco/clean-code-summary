@@ -8,7 +8,9 @@ As programmers, we've all struggled with frustrating code that wastes time and e
 
 ## The true cost of disorganized code
 [Sonar - The True Cost of Bad Code in Software Development](https://www.sonarsource.com/blog/the-true-cost-of-bad-code-in-software-development/)
+
 ![](https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fc6ubf77uwipf4gtucw8q.png)
+
 As messiness grows, team productivity plummets. Companies try to fix this by hiring more developers, but newcomers often lack knowledge of the system's design and unintentionally add to the confusion. The cycle of mounting technical debt and chaos continues, making it harder to deliver quality software.
 
 ### The false hope of complete rewrites
@@ -25,6 +27,7 @@ Writing clean code is a skill and an art, requiring discipline and a developed â
 
 ### What is clean code?
 [Refactoring Guru - Clean Code](https://refactoring.guru/refactoring/what-is-refactoring)
+
 There's no single definition, but respected developers share some principles:
 * **Bjarne Stroustrup**: Clean code is efficient, straightforward, easy to maintain, and performs well. It "does one thing well."
 * **Grady Booch**: It reads like prose and reflects clear intent through well structured abstractions.
@@ -38,4 +41,5 @@ Code is read far more than written; clean code helps teammates and your future s
 
 ### The boy scout rule
 [DEVIQ - The boy scout rule](https://deviq.com/principles/boy-scout-rule)
+
 Always leave code cleaner than you found it. Small, ongoing improvements keep the codebase healthy and sustainable.
