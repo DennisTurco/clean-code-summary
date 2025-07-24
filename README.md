@@ -46,7 +46,7 @@ This is a personal learning project, but feel free to open issues or suggestions
 
 - [Chapter 1: What Makes Code "Clean"?](./chapter-01.md)
 - [Chapter 2: Writing Clear and Descriptive Names](./chapter-02.md)
-- [Chapter 3: ](./chapter-03.md)
+- [Chapter 3: Designing Focused and Readable Functions](./chapter-03.md)
 - [Chapter 4: ](./chapter-04.md)
 - [Chapter 5: ](./chapter-05.md)
 - [Chapter 6: ](./chapter-06.md)
