@@ -2,6 +2,18 @@
 
 This repository contains a personal summary and paraphrased notes from the book **_Clean Code: A Handbook of Agile Software Craftsmanship_** by **Robert C. Martin**.
 
+## Table of Contents
+
+- [Chapter 1: What Makes Code "Clean"?](./chapter-01.md)
+- [Chapter 2: Writing Clear and Descriptive Names](./chapter-02.md)
+- [Chapter 3: Designing Focused and Readable Functions](./chapter-03.md)
+- [Chapter 4: ](./chapter-04.md)
+- [Chapter 5: ](./chapter-05.md)
+- [Chapter 6: ](./chapter-06.md)
+- [Chapter 7: ](./chapter-07.md)
+- ...
+
+
 ## About
 
 The goal of this project is to provide a concise, reworded reference of the core principles and practices described in *Clean Code*. It is intended for learning and review purposes only. All notes are written in my own words and do not include any copyrighted text from the book.
@@ -41,14 +53,3 @@ This is a personal learning project, but feel free to open issues or suggestions
 - Clear and respectful of copyright
 
 ---
-
-## Table of Contents
-
-- [Chapter 1: What Makes Code "Clean"?](./chapter-01.md)
-- [Chapter 2: Writing Clear and Descriptive Names](./chapter-02.md)
-- [Chapter 3: Designing Focused and Readable Functions](./chapter-03.md)
-- [Chapter 4: ](./chapter-04.md)
-- [Chapter 5: ](./chapter-05.md)
-- [Chapter 6: ](./chapter-06.md)
-- [Chapter 7: ](./chapter-07.md)
-- ...
