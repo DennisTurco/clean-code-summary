@@ -7,7 +7,7 @@ This repository contains a personal summary and paraphrased notes from the book 
 - [Chapter 1: What Makes Code "Clean"?](./chapter-01.md)
 - [Chapter 2: Writing Clear and Descriptive Names](./chapter-02.md)
 - [Chapter 3: Designing Focused and Readable Functions](./chapter-03.md)
-- [Chapter 4: ](./chapter-04.md)
+- [Chapter 4: When (and When Not) to Write Comments](./chapter-04.md)
 - [Chapter 5: ](./chapter-05.md)
 - [Chapter 6: ](./chapter-06.md)
 - [Chapter 7: ](./chapter-07.md)

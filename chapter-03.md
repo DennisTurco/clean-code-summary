@@ -3,20 +3,20 @@
 # Designing Focused and Readable Functions
 Functions are one of the main things that help you to organize your program.
 
-## Small
+## 1. Small
 As Robert Martin says:
 > "*The first rule of functions is that they should be small. The second rule of functions is that they should be smaller than that*".
 
-## Do one thing
+## 2. Do one thing
 A function should perform a single, clearly defined task, which should be evident from its name.
 If a function does more than one thing, split it into multiple smaller functions each responsible for just one job.
 
-## Only one level of abstraction
+## 3. Only one level of abstraction
 To ensure a function does only one thing, all of its internal statements should operate at the same level of abstraction.
 Avoid mixing **high-level logic** (e.g., `getHtml()`) with **low-level details** (e.g., `.append("\n")`) in the same function.
 If such a mix exists, refactor the function to maintain a **consistent abstraction level**.
 
-### The stepdown rule
+### 3.1 The stepdown rule
 Code should be structured like a **top-down narrative**, where each function introduces and calls functions at the **next level of abstraction**. This approach makes the program easy to read, following a logical **step-down structure**.
 
 Following this rule ensure:
@@ -27,7 +27,7 @@ Following this rule ensure:
 Although challenging to master, this technique is essential for writing clean, well-structured code.
 
 
-## Switch statements
+## 4. Switch statements
 
 Switch statements are problematic because they:
 
@@ -70,7 +70,7 @@ public class VehicleFactoryImpl implements VehicleFactory {
 }
 ```
 
-## Naming and Function Arguments
+## 5. Naming and Function Arguments
 * Choose clear, meaningful names so code reads like prose.
 * Prefer long, descriptive names over short, cryptic ones.
 * Keep functions small and focused, making naming easier.
@@ -79,7 +79,7 @@ public class VehicleFactoryImpl implements VehicleFactory {
 
 *$\rightarrow$ Code should be “pretty much what you expected” just by reading function names*
 
-## Keep Function Arguments Minimal
+## 6. Keep Function Arguments Minimal
 Ideal number of arguments:
 → 0 (niladic) > 1 (monadic) > 2 (dyadic)
 → Avoid 3+ (triadic/polyadic) unless absolutely necessary.
@@ -96,7 +96,7 @@ Ideal number of arguments:
 
 *$\rightarrow$ Clear, minimal arguments make functions easier to read, test, and maintain.*
 
-### Common Monadic Form
+### 6.1 Common Monadic Form
 Monadic functions (functions with a single argument) generally serve two purposes:
 
 1. **Querying**: Asking a question about the argument.
@@ -113,23 +113,23 @@ Best Practices:
 - **Clarify intent**: Choose names that clearly indicate whether the function is querying, transforming, or handling an event.
 - **Avoid confusing forms**: For example, avoid using output arguments for transformations like `void includeSetupPageInto(StringBuffer pageText)`. Instead, use a return value to indicate the transformation, such as `StringBuffer transform(StringBuffer in)`.
 
-### Flag arguments
+### 6.2 Flag arguments
 Avoid to pass a boolean into a function, because lead the method to become more complex: it's saying that the function is doing multiple things depending of the value of the boolean you are passing.
 
 For example if you read a method call `createUser(true)` you are not able what that true is saying, with the signature of the method `createUser(boolean isMale)` it become more clear but you should refactorize the method by splitting it into 2 pieces: `createMaleUser()` and `createFemaleUser()`.
 
-### Function Arguments: Keep Them Simple
+### 6.3 Function Arguments: Keep Them Simple
 * One argument (**monadic**): is easiest to understand.
 Example: `writeField(name)` is clearer than `writeField(outputStream, name)`.
 * Two arguments (**dyadic**): are acceptable when natural (e.g., `new Point(0, 0)`) but are harder to read and require care with order and meaning.
 * Three arguments (**triadic**): greatly increase complexity and should be avoided unless absolutely necessary.
 
-### Function Arguments and Naming
+### 6.4 Function Arguments and Naming
 1. **Use Argument Objects**: If a function needs more than 2–3 arguments, group related ones into a class (e.g., use `Point` instead of separate `x` and `y`).
 2. **Limit Argument Count**: Even for functions with variable arguments (e.g., String.format), keep the core arguments to a maximum of 3 for clarity and simplicity.
 3. **Name Functions Clearly**: Function names should form clear verb/noun pairs (e.g., `write(name)`) or include argument hints (e.g., `assertExpectedEqualsActual(expected, actual)`) to make the code self-explanatory.
 
-## No side effects
+## 7. No side effects
 A function should do only one thing, and that task should be clearly reflected by its name.
 
 Bad example:
@@ -155,13 +155,13 @@ If it must both check and add, the function should be called `IsValueMissingAndA
 
 Or better yet, split into two separate functions for clarity and maintainability.
 
-## Command Query Separation
+## 8. Command Query Separation
 A function should either do something (a command) or return something (a query) — but not both.
 
 Mixing the two can lead to confusion and unpredictable behavior.
 A function should clearly act (e.g., `saveToDatabase()`) or answer (e.g., `isSaved()`), but not do both at once.
 
-## Exceptions are better than error codes
+## 9. Exceptions are better than error codes
 Returning error codes from functions violates the **Command Query Separation** principle
 
 *Example: Using error codes*
@@ -189,7 +189,7 @@ This improve readability by handling the error in a single place by:
 * Improving readability and separation of concerns
 * Avoiding scattered checks and confusing logic
 
-### Extract try/catch blocks
+### 9.1 Extract try/catch blocks
 `try/catch` blocks tend to clutter the main logic, making code harder to read and follow.
 To improve clarity, move error handling code into separate functions so the core process remains clean and focused.
 
@@ -232,7 +232,7 @@ private static void logError(Exception ex) {
 * Simplifies testing and maintenance
 
 
-### Keep Error Handling Isolated
+### 9.2 Keep Error Handling Isolated
 
 Since **functions should do one thing**, error handling should be isolated. This means:
 
@@ -241,7 +241,7 @@ Since **functions should do one thing**, error handling should be isolated. This
 3. After the `catch` or `finally`, there should be **nothing else**.
 
 
-### Avoid Centralized Error Dependencies
+### 9.3 Avoid Centralized Error Dependencies
 
 Defining error codes in a central class (e.g., `Error.java`) creates a **dependency magnet**, requiring multiple classes to import it. This leads to **recompilation and redeployment** whenever errors change, discouraging updates.
 
@@ -251,12 +251,12 @@ Defining error codes in a central class (e.g., `Error.java`) creates a **depende
 - This **eliminates tight coupling** and makes error handling more maintainable.
 
 
-## Write It Once, Use It Everywhere
+## 10. Write It Once, Use It Everywhere
 
 Duplication clutters code and increases maintenance effort $\rightarrow$ a single change might require multiple updates.
 Many programming paradigms (like OOP, AOP, and structured programming) exist largely to reduce repetition and centralize logic.
 
-## Write with Clear Control Flow
+## 11. Write with Clear Control Flow
 Dijkstra’s **single-entry, single-exit** rule suggests:
 
 - **Only one return statement per function.**
@@ -266,7 +266,7 @@ Dijkstra’s **single-entry, single-exit** rule suggests:
 However, **for small functions**, multiple return statements or breaks can **improve clarity** without harming maintainability.
 
 
-## Crafting Clean Functions
+## 12. Crafting Clean Functions
 
 Writing clean code is a **process**, just like writing a paper. Initially, functions may come out **long, complicated, and messy**, with poor naming, duplication, and complex logic. But the key is to **start with something functional**, typically covered by unit tests, and **refine it over time**.
 

@@ -3,7 +3,7 @@
 # Writing Clear and Descriptive Names
 Naming matters. Clear, intentional names make code easier to read, understand, and maintain.
 
-## Names should revealing their intentions
+## 1. Names should revealing their intentions
 Names should say:
 * What something is,
 * What it does,
@@ -56,7 +56,7 @@ public List<int> getEvenFromList(List<int> values) {
 ```
 Just by using better names, we make the code self-explanatory. Clean code often starts with clear names.
 
-## Avoid confusion
+## 2. Avoid confusion
 Don't use unclear or misleading names:
 * Too short: `ds`, `tmp`
 * Easily confused: `O`, `0`, `l`, `1`
@@ -74,7 +74,7 @@ In this example:
 
 The more readable your code is, the fewer errors you're likely to introduce. Always prefer clarity over cleverness.
 
-## Pronounceable names
+## 3. Pronounceable names
 Follow a simple rule: "If you can't pronunce it, don't use it".
 
 Compare:
@@ -97,15 +97,15 @@ class Person {
 };
 ```
 
-## Searchable names are better
+## 4. Searchable names are better
 Use descriptive variable names like `maxToKeep` or `MAX_WIDTH` instead of hardcoded numbers. This makes the code easier to search, read, and understand.
 
-## Some general name convenctions
+## 5. Some general name convenctions
 * **Interfaces and Implementations**: Avoid prefixes like I in interface names (e.g., `IBetRepository`). Instead, name the interface `BetRepository` and the implementation something like `DefaultBetRepository` or `SqlBetRepository`.
 * **Class Names**: Use noun phrases, not verbs. Good examples: `Person`, `User`. Avoid vague or process like names such as `Manager` or `Processor`.
 * **Method Names**: Use verbs or verb phrases that clearly describe the action, like `insertNewUser()` or `getNewValue()`.
 
-## Naming Best Practices
+## 6. Naming Best Practices
 * Avoid cute or funny names: Use clear, descriptive names (`DeleteItems`, not `HolyHandGrenade`).
 * Stick to one word per concept: Don't mix terms like fetch, get, and retrieve—pick one and be consistent.
 * Avoid name overloading (puns): Use distinct names for different actions (`insert` vs. `add`) to reduce ambiguity.
@@ -114,9 +114,9 @@ Use descriptive variable names like `maxToKeep` or `MAX_WIDTH` instead of hardco
 * Use problem domain names when representing real world entities or logic.
 
 
-## Adding and Avoiding Context in Names
+## 7. Adding and Avoiding Context in Names
 * **Add Meaningful Context**: Use well named classes or structures (e.g., Address, GuessStatisticsMessage) to give variables clear context, instead of adding confusing prefixes.
 * **Avoid Gratuitous Context**: Don't overuse prefixes like GSD or Account if they add no real clarity, they make code harder to read and navigate.
 
-## Final Note
+## 8. Final Note
 Naming is a skill that improves with practice. Don't fear renaming for clarity, it helps code read more like natural language, making it easier to understand and maintain. Use refactoring tools confidently to support this.
