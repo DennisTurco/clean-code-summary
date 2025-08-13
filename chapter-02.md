@@ -1,6 +1,6 @@
 *This chapter is a summary based on “Clean Code” by Robert C. Martin. All rights reserved by the original author.*
 
-# Writing Clear and Descriptive Names
+# Descriptive Names
 Naming matters. Clear, intentional names make code easier to read, understand, and maintain.
 
 ## 1. Names should revealing their intentions

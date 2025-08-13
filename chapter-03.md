@@ -1,6 +1,6 @@
 *This chapter is a summary based on “Clean Code” by Robert C. Martin. All rights reserved by the original author.*
 
-# Designing Focused and Readable Functions
+# Functions
 Functions are one of the main things that help you to organize your program.
 
 ## 1. Small

@@ -5,13 +5,22 @@ This repository contains a personal summary and paraphrased notes from the book 
 ## Table of Contents
 
 - [Chapter 1: What Makes Code "Clean"?](./chapter-01.md)
-- [Chapter 2: Writing Clear and Descriptive Names](./chapter-02.md)
-- [Chapter 3: Designing Focused and Readable Functions](./chapter-03.md)
-- [Chapter 4: When (and When Not) to Write Comments](./chapter-04.md)
-- [Chapter 5: ](./chapter-05.md)
-- [Chapter 6: ](./chapter-06.md)
-- [Chapter 7: ](./chapter-07.md)
-- ...
+- [Chapter 2: Descriptive Names](./chapter-02.md)
+- [Chapter 3: Functions](./chapter-03.md)
+- [Chapter 4: Comments](./chapter-04.md)
+- [Chapter 5: Formatting](./chapter-05.md)
+- [Chapter 6: WIP](./chapter-06.md)
+- [Chapter 7: WIP](./chapter-07.md)
+- [Chapter 8: WIP](./chapter-08.md)
+- [Chapter 9: WIP](./chapter-09.md)
+- [Chapter 10: WIP](./chapter-10.md)
+- [Chapter 11: WIP](./chapter-11.md)
+- [Chapter 12: WIP](./chapter-12.md)
+- [Chapter 13: WIP](./chapter-13.md)
+- [Chapter 14: WIP](./chapter-14.md)
+- [Chapter 15: WIP](./chapter-15.md)
+- [Chapter 16: WIP](./chapter-16.md)
+- [Chapter 17: WIP](./chapter-17.md)
 
 
 ## About
