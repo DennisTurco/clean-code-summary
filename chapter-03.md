@@ -11,6 +11,8 @@ As Robert Martin says:
 A function should perform a single, clearly defined task, which should be evident from its name.
 If a function does more than one thing, split it into multiple smaller functions each responsible for just one job.
 
+![](./imgs/functions1.png)
+
 ## 3. Only one level of abstraction
 To ensure a function does only one thing, all of its internal statements should operate at the same level of abstraction.
 Avoid mixing **high-level logic** (e.g., `getHtml()`) with **low-level details** (e.g., `.append("\n")`) in the same function.
