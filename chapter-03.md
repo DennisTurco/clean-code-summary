@@ -3,6 +3,8 @@
 # Functions
 Functions are one of the main things that help you to organize your program.
 
+![](./imgs/functions2.png)
+
 ## 1. Small
 As Robert Martin says:
 > "*The first rule of functions is that they should be small. The second rule of functions is that they should be smaller than that*".
@@ -130,6 +132,9 @@ Example: `writeField(name)` is clearer than `writeField(outputStream, name)`.
 1. **Use Argument Objects**: If a function needs more than 2–3 arguments, group related ones into a class (e.g., use `Point` instead of separate `x` and `y`).
 2. **Limit Argument Count**: Even for functions with variable arguments (e.g., String.format), keep the core arguments to a maximum of 3 for clarity and simplicity.
 3. **Name Functions Clearly**: Function names should form clear verb/noun pairs (e.g., `write(name)`) or include argument hints (e.g., `assertExpectedEqualsActual(expected, actual)`) to make the code self-explanatory.
+
+
+![](./imgs/functions3.png)
 
 ## 7. No side effects
 A function should do only one thing, and that task should be clearly reflected by its name.
