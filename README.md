@@ -10,7 +10,7 @@ This repository contains a personal summary and paraphrased notes from the book 
 - [Chapter 4: Comments](./chapter-04.md)
 - [Chapter 5: Formatting](./chapter-05.md)
 - [Chapter 6: WIP](./chapter-06.md)
-- [Chapter 7: WIP](./chapter-07.md)
+- [Chapter 7: Error Handling - WIP](./chapter-07.md)
 - [Chapter 8: WIP](./chapter-08.md)
 - [Chapter 9: WIP](./chapter-09.md)
 - [Chapter 10: WIP](./chapter-10.md)
