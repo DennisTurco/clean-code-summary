@@ -10,8 +10,8 @@ This repository contains a personal summary and paraphrased notes from the book 
 - [Chapter 4: Comments](./chapter-04.md)
 - [Chapter 5: Formatting](./chapter-05.md)
 - [Chapter 6: WIP](./chapter-06.md)
-- [Chapter 7: WIP](./chapter-07.md)
-- [Chapter 8: WIP](./chapter-08.md)
+- [Chapter 7: Error Handling](./chapter-07.md)
+- [Chapter 8: External Code](./chapter-08.md)
 - [Chapter 9: WIP](./chapter-09.md)
 - [Chapter 10: WIP](./chapter-10.md)
 - [Chapter 11: WIP](./chapter-11.md)
@@ -21,7 +21,6 @@ This repository contains a personal summary and paraphrased notes from the book 
 - [Chapter 15: WIP](./chapter-15.md)
 - [Chapter 16: WIP](./chapter-16.md)
 - [Chapter 17: WIP](./chapter-17.md)
-
 
 ## About
 
@@ -60,5 +59,3 @@ This is a personal learning project, but feel free to open issues or suggestions
 - Written in your own words
 - Free of direct quotes from the book
 - Clear and respectful of copyright
-
----
