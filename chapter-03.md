@@ -4,7 +4,7 @@
 
 Functions are one of the main things that help you to organize your program.
 
-![functions2](./imgs/functions2.png)
+![](./imgs/functions2.png)
 
 ## 1. Small
 
@@ -16,7 +16,7 @@ As Robert Martin says:
 A function should perform a single, clearly defined task, which should be evident from its name.
 If a function does more than one thing, split it into multiple smaller functions each responsible for just one job.
 
-![functions1](./imgs/functions1.png)
+![](./imgs/functions1.png)
 
 ## 3. Only one level of abstraction
 
@@ -148,7 +148,7 @@ Example: `writeField(name)` is clearer than `writeField(outputStream, name)`.
 2. **Limit Argument Count**: Even for functions with variable arguments (e.g., String.format), keep the core arguments to a maximum of 3 for clarity and simplicity.
 3. **Name Functions Clearly**: Function names should form clear verb/noun pairs (e.g., `write(name)`) or include argument hints (e.g., `assertExpectedEqualsActual(expected, actual)`) to make the code self-explanatory.
 
-![function3](./imgs/functions3.png)
+![](./imgs/functions3.png)
 
 ## 7. No side effects
 
