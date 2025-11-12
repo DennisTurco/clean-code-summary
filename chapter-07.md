@@ -70,7 +70,7 @@ In this case Java force you to 2 possible options:
 
 But **you should use Unchecked Exceptions where possible**. Because the main issue is that checked exceptions violate the [Open/Clodes Principle](https://www.geeksforgeeks.org/java/open-closed-principle-in-java-with-examples/). If a low-level method adds a new checked exception, all higher-level method in the call chain must change their signatures, creating a cascade of unnecessary notifications and breaking incapsulation.
 
-![image](./imgs/errors1.png.png)
+![image](./imgs/errors1.png)
 
 **Checked Exception**:
 
